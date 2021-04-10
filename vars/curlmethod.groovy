@@ -1,4 +1,4 @@
-def call(String url, String JFROG_ID,int bn ) {
+def call(String url, String JFROG_ID,String bn ) {
 
 //String resp = sh(script: "curl -u $JFROG_ID -s $url | grep uri | awk '{ print \$3 }' | sed 's+\"++g' | sed 's+/++g' | sed 's+,++g' | head -1", returnStdout: true).trim()
 
