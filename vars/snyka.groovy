@@ -1,4 +1,4 @@
-def call() {
-  snykSecurity additionalArguments: '--docker myimage:12', failOnIssues: false, snykInstallation: 'mySnyk', snykTokenId: 'mySnkToken'
+def call(int buildnumber) {
+  snykSecurity additionalArguments: '--docker myimage:$buildnumber', failOnIssues: false, snykInstallation: 'mySnyk', snykTokenId: 'mySnkToken'
   echo "hi Prasad"
 }
